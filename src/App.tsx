@@ -2,11 +2,11 @@ import { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/pt-br';
 import ReactTooltip from 'react-tooltip';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaGithub, FaHeart } from 'react-icons/fa';
 import { ThemeProvider } from 'styled-components';
 
 import themeConfig from './theme.json';
-import { Continue, GlobalStyle, Header, Flex } from './styles';
+import { Continue, GlobalStyle, Header, Flex, Footer } from './styles';
 
 import './components/firebase';
 import Container from './components/container';
@@ -31,7 +31,7 @@ moment.updateLocale('pt-br', {
 // https://colorhunt.co/palette/1a1a2e16213e0f3460e94560
 function App() {
 
-  const [modalItem,setModalItem] = useState<iJobProps | null>(null);
+  const [modalItem, setModalItem] = useState<iJobProps | null>(null);
 
 
   const openModal = (item: iJobProps) => () => {
@@ -67,6 +67,11 @@ function App() {
           <Header>Contato</Header>
         </Flex>
       </Container>
+      <Footer>
+        <span><a href='https://wallhere.com/pt/wallpaper/1590161' target='_blank'>Créditos do Wallpaper</a></span>
+        <span>Desenvolvimento por mim <FaHeart /></span>
+        <span>Projeto no <a href='https://github.com/LucasAlviene/Alviene.dev' target='_blank' ><FaGithub /> Github</a></span>
+      </Footer>
     </ThemeProvider>
   );
 }

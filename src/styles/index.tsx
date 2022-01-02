@@ -76,3 +76,31 @@ export const Column = styled.div<iColumn>`
     position:relative;
     width: ${props => props.width ?? 50}%;
 `;
+
+export const Footer = styled.footer`
+  display:flex;
+  background: #ddd;
+  padding:8px;
+  justify-content: center;
+  color: #777;
+  span{
+    padding-right:10px;
+    margin-right:10px;
+    border-right: 1px solid #bbb;
+    a{
+      color: ${props => props.theme.primary};
+      text-decoration:none;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
+    svg{
+      vertical-align: text-bottom;
+      color: ${props => props.theme.primary};
+    }
+    &:last-child{
+      margin-right:0;
+      border-right:0;
+    }
+  }
+`;

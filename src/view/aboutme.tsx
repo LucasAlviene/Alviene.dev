@@ -32,6 +32,14 @@ const Icons = styled.div`
         border-radius:100%;
     }
 `;
+
+const Description = styled.div`
+    color: #444;
+    margin: 8px 0;
+    p{
+        margin:0;
+    }
+`;
 const AboutMe = () => {
     return (
         <Flex>
@@ -54,8 +62,12 @@ const AboutMe = () => {
                     </div>
                 </Column>
                 <Column width={70}>
-                    <Name>Lucas Alviene Pereira</Name>
-                    <p style={{color: "#555"}}>Mauris egestas enim ac orci fringilla dignissim. Vivamus ut tincidunt lacus, nec ultricies justo. Vivamus orci purus, posuere eu elit vitae, suscipit tincidunt nisi. Nam malesuada laoreet gravida. Vestibulum tempus convallis nisi. Curabitur id nisi leo. Aliquam malesuada lectus non tortor venenatis faucibus. Donec euismod erat nunc, sit amet mollis felis ullamcorper a. Proin lacinia, lacus in varius pretium, lectus elit sodales ligula, in porta lacus diam vel dui.</p>
+                    <Name>Lucas Alviene</Name>
+                    <Description>
+                        <p>Olá, sou <b>Lucas Alviene</b> tenho 22 anos e sou desenvolvedor fullstack, atualmente estou estudando ciência da computação na Universidade Federal de Pelotas.</p>
+                        <p>Trabalho autonomamente com PHP, MySQL, NodeJS e ReactJS, para projetos pessoais e profissionais, já trabalhei com React Native na criação do meu primeiro aplicativo e com Unity para uma materia da faculdade.</p>
+                        <p>Meu foco é desenvolvimento backend com <b>PHP</b> e <b>NodeJS</b> e frontend com <b>ReactJS</b>, também pretendo estudar C# para criação de jogos eletrônicos utilizando a Unity.</p>
+                    </Description>
                     <ProgressBar name='php' value='90' />
                     <ProgressBar name='reactjs' value='80' />
                     <ProgressBar name='nodejs' value='75' />
