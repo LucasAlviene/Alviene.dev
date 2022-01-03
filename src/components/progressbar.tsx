@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Container = styled.div`
     position:relative;
     margin-left: 30px;
-    width: 100%;
+    width: calc(100% - 30px);
     border: 1px solid rgba(200,200,200,0.3);
     background: #dedede;
     height:25px;

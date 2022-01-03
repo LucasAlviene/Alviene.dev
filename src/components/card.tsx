@@ -5,6 +5,7 @@ import Icon from './languages';
 import { iJobProps } from '../interface';
 import { Container, Image, Left, Title, SubTitle, Icons, View } from '../styles/card';
 
+import logo from '../images/logo.png';
 
 interface iCardProps extends iJobProps {
     onClick: MouseEventHandler | undefined
@@ -25,7 +26,7 @@ const Card = ({ image, id,name, languages, date_start, date_end, onClick }: iCar
     return (
         <Container>
             <Image>
-                <img src={image} />
+                <img src={image ?? logo} />
             </Image>
             <Left>
                 <Title>{name}</Title>

@@ -45,7 +45,7 @@ const AboutMe = () => {
         <Flex>
             <Header>Sobre Mim</Header>
             <Grid>
-                <Column width={30}>
+                <Column $width={30}>
                     <div style={{width: 200,height: 200,margin:" 0 auto", position: "relative"}}>
 
                         <Avatar src="https://avatars.githubusercontent.com/u/54518010?v=4" />
@@ -61,7 +61,7 @@ const AboutMe = () => {
                         </Icons>
                     </div>
                 </Column>
-                <Column width={70}>
+                <Column $width={70}>
                     <Name>Lucas Alviene</Name>
                     <Description>
                         <p>Olá, sou <b>Lucas Alviene</b> tenho 22 anos e sou desenvolvedor fullstack, atualmente estou estudando ciência da computação na Universidade Federal de Pelotas.</p>

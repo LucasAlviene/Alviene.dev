@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import moment from 'moment';
 import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
-import { doc, orderBy, query, getDoc } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 
 // Styles
 import { Container, Image, Left, Title, SubTitle, Icons, View } from '../styles/card';
@@ -77,7 +77,7 @@ const Modal = ({ onClose, image, id, name, languages, role, date_start, date_end
         <ModalFull onClick={onClose}>
             <ContainerWidth>
                 <ModalDialog onClick={(e) => e.stopPropagation()}>
-                    <Container $inverted style={{ margin: 0 }}>
+                    <Container $inverted style={{ margin: 0, border:0, borderBottom: "1px solid #dedede" }}>
                         <Image>
                             <img src={image} />
                         </Image>

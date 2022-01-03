@@ -62,11 +62,13 @@ function App() {
         <MyJobs openModal={openModal} closeModal={closeModal} />
         <Continue data-tip="Continuar" to="contact" spy={true} smooth={true} duration={100}><FaChevronDown /></Continue>
       </Container>
-      <Container id="contact" background="#f1f1f1">
+      {/*}
+      <Container id="contact" background="#f1f1f1" style={{minHeight:"calc(100vh - 35px)"}}>
         <Flex>
           <Header>Contato</Header>
         </Flex>
       </Container>
+      */}
       <Footer>
         <span><a href='https://wallhere.com/pt/wallpaper/1590161' target='_blank'>Créditos do Wallpaper</a></span>
         <span>Desenvolvimento por mim <FaHeart /></span>

@@ -22,8 +22,9 @@ const ContainerFull = styled.section<iContainer>`
 display: flex;
   position: relative;
   color: ${props => props.color ?? props.theme.textPrimary};
-  min-height: 100vh;
+  min-height: calc(100vh + 0.4px);
   z-index:2;
+  width: 100%;
   ${props => props.backgroundImage && `
   background: url(${props.backgroundImage});
   background-size: cover;

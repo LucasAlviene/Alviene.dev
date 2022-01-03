@@ -8,6 +8,9 @@ export const Title = styled.h1`
   font-size:5em;
   text-align:center;
   text-shadow: 0 0 3px rgba(0,0,0,.3);
+  @media (max-width: 600px) {
+    font-size: 3em;
+  }
 `;
 
 export const GlobalStyle = createGlobalStyle<{ theme: iTheme }>`
@@ -32,6 +35,9 @@ text-align:center;
 margin:0;
 font-weight:normal;
 color: #f1f1f1;
+@media (max-width: 600px) {
+  font-size: 1.2em;
+}
 `;
 
 export const Center = styled.div`
@@ -74,7 +80,13 @@ export const Grid = styled.div`
 `;
 export const Column = styled.div<iColumn>`
     position:relative;
-    width: ${props => props.width ?? 50}%;
+    @media (min-width: 992px) {
+      width: ${props => props.$width ?? 50}%;
+    }
+    @media (max-width: 992px) {
+      padding: 1rem;
+      width: 100%;
+    }
 `;
 
 export const Footer = styled.footer`
@@ -87,6 +99,9 @@ export const Footer = styled.footer`
     padding-right:10px;
     margin-right:10px;
     border-right: 1px solid #bbb;
+    @media (max-width: 600px) {
+      text-align:center;
+    }
     a{
       color: ${props => props.theme.primary};
       text-decoration:none;

@@ -16,15 +16,16 @@ export interface iContainer {
 }
 
 export interface iColumn{
-    width?: number
+    $width?: number
 }
 export interface iJobProps{
     id?: string
-    image: string
+    image?: string
     name: string
     role: string
     languages: languageAvailable[]
     description: string
     date_start: Timestamp
     date_end?: Timestamp
+    isProfessional: boolean 
 }
