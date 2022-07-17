@@ -46,7 +46,7 @@ function App() {
 
   return (
     <ThemeProvider theme={themeConfig}>
-      {modalItem && <Modal {...modalItem} onClose={closeModal} />}
+      <Modal item={modalItem} onClose={closeModal} />
 
       <GlobalStyle />
       <ReactTooltip effect='solid' place='top' />
